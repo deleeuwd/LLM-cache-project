@@ -1,0 +1,23 @@
+benchmark_iterations: 1000
+benchmark_workloads:
+- repetitive
+- contextual
+- novel
+cache_size: 10000
+cache_ttl: 3600
+embedding_dim: 768
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+fl_clients: 3
+fl_grid_search_range:
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+fl_round: 1000000
+log_file: enhanced_cache.log
+log_level: INFO
+pca_dim: 128
+pca_enabled: false
+pca_training_samples: 5000
+tau: 0.9
+tau_context: 0.7
